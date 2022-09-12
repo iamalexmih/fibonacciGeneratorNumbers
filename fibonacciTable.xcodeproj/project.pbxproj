@@ -10,9 +10,10 @@
 		B503E6CF28CF42C0002F598E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E6CE28CF42C0002F598E /* AppDelegate.swift */; };
 		B503E6D128CF42C0002F598E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E6D028CF42C0002F598E /* SceneDelegate.swift */; };
 		B503E6D328CF42C0002F598E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E6D228CF42C0002F598E /* ViewController.swift */; };
-		B503E6D628CF42C0002F598E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B503E6D428CF42C0002F598E /* Main.storyboard */; };
 		B503E6D828CF42C1002F598E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B503E6D728CF42C1002F598E /* Assets.xcassets */; };
 		B503E6DB28CF42C1002F598E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B503E6D928CF42C1002F598E /* LaunchScreen.storyboard */; };
+		B503E6E328CF48F0002F598E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E6E228CF48F0002F598E /* Cell.swift */; };
+		B503E6E728CF737E002F598E /* FibonacciGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E6E628CF737E002F598E /* FibonacciGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		B503E6CE28CF42C0002F598E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B503E6D028CF42C0002F598E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B503E6D228CF42C0002F598E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B503E6D528CF42C0002F598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B503E6D728CF42C1002F598E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B503E6DA28CF42C1002F598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B503E6DC28CF42C1002F598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B503E6E228CF48F0002F598E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		B503E6E628CF737E002F598E /* FibonacciGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 				B503E6CE28CF42C0002F598E /* AppDelegate.swift */,
 				B503E6D028CF42C0002F598E /* SceneDelegate.swift */,
 				B503E6D228CF42C0002F598E /* ViewController.swift */,
-				B503E6D428CF42C0002F598E /* Main.storyboard */,
+				B503E6E628CF737E002F598E /* FibonacciGenerator.swift */,
+				B503E6E228CF48F0002F598E /* Cell.swift */,
 				B503E6D728CF42C1002F598E /* Assets.xcassets */,
 				B503E6D928CF42C1002F598E /* LaunchScreen.storyboard */,
 				B503E6DC28CF42C1002F598E /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				B503E6DB28CF42C1002F598E /* LaunchScreen.storyboard in Resources */,
 				B503E6D828CF42C1002F598E /* Assets.xcassets in Resources */,
-				B503E6D628CF42C0002F598E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B503E6D328CF42C0002F598E /* ViewController.swift in Sources */,
+				B503E6E328CF48F0002F598E /* Cell.swift in Sources */,
+				B503E6E728CF737E002F598E /* FibonacciGenerator.swift in Sources */,
 				B503E6CF28CF42C0002F598E /* AppDelegate.swift in Sources */,
 				B503E6D128CF42C0002F598E /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B503E6D428CF42C0002F598E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B503E6D528CF42C0002F598E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B503E6D928CF42C1002F598E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,6 @@
 				INFOPLIST_FILE = fibonacciTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +315,6 @@
 				INFOPLIST_FILE = fibonacciTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
