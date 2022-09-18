@@ -1,6 +1,6 @@
 # Генератор чисел Фибоначчи.
 
-Данный проект является реализацией тестового задания для собеседования на позицию iOS Developer.
+Данный проект является реализацией тестового задания для собеседования на позицию iOS Developer. Задание подсмотренно у пользователя [lexonerus](https://github.com/lexonerus).
 
 ## Задание:
 
@@ -18,6 +18,6 @@ Kotlin для Android, Swift для iOS
 Остальное по вкусу. Переключение списка «простые/фибоначчи» можно сделать как угодно, во вложении картинка просто как пример.
 
 <p align="center">
-<img src="https://github.com/iamalexmih/CryptoMonitor/blob/main/Screenshot/screenshots%20main%20screen%20App.png" 
+<img src="https://github.com/iamalexmih/fibonacciGeneratorNumbers/blob/main/Screenshot/example.png" 
 alt="screenshots main Screen App" width="300" />
 </p>
